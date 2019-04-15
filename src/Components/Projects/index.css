@@ -1,0 +1,23 @@
+/* .projects-outer-container {
+    border-top: solid 5px blue;
+    border-bottom: solid 5px blue;
+    margin: 0;
+} */
+
+.projects-container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2em;
+    
+}
+
+.project-item :hover{
+    cursor: pointer;
+}
+
+.logo {
+    height: auto;
+    width: 100px;
+}

@@ -1,0 +1,74 @@
+.hero-container {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+}
+.heroImg {
+    width: 100vw;
+    height: auto;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.hero-header {
+    position: absolute;
+    left: 25vw;
+    top: 20vh;
+    z-index: 1;
+    background-Color: #3F52B5;
+    padding: 10;
+    font-size: 5rem;
+    color: white;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid green; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      
+    opacity: 0.9;
+}
+
+.subHeader {
+    /* width: 200px; */
+    position: absolute;
+    left: 40vw;
+    top: 40vh;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.9;
+    padding: 1em;
+    font-size: 2rem;
+    align-items: right;
+    color: white;
+}
+
+.inline {
+    display: inline;
+    white-space: normal;
+}
+
+.subHeaderInnerObj {
+    text-align: left;
+}
+
+.const {
+    display: inline;
+    color: blue;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+  
+  

@@ -12,3 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* @import './reset.css'; */
+@import './Components/Navbar/index.css';
+@import './Components/Hero/index.css';
+

@@ -1,0 +1,10 @@
+.navbar-container{
+    display: flex;
+}
+
+.nav-logo {
+    width: 20px;
+    height: auto;
+    margin-left: 20px;
+}
+

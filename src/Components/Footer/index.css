@@ -1,0 +1,62 @@
+.background-image {
+    opacity: 0.6;
+    height: auto; 
+    width: 100%;    
+
+    
+}
+
+.img-container {
+    height: 580px; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-container {
+   
+    width: 100%;
+    position: absolute;
+    top: 190vh;
+    padding-top: 1em;
+}
+
+
+.footer-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.footer-item {
+    background-color: white;
+    color: blue;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    padding: 1em;
+}
+
+.footer-item :hover{
+    cursor: pointer;
+   
+    
+}
+
+.logo {
+    height: auto;
+    width: 100px;
+}
+
+.footer-react-attr {
+    margin-top: 5em;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-basis: flex-end;   
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+   
+
+}
