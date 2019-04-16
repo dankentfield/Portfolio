@@ -1,23 +1,96 @@
-/* .projects-outer-container {
-    border-top: solid 5px blue;
-    border-bottom: solid 5px blue;
-    margin: 0;
-} */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .project-image-container {
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        padding: 1em;
+    }
 
-.projects-container {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 2em;
-    
+    .project-item a {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
+    }
+
+    .project-item h2 {
+        color: #3F51B5;
+    }
+
+    .projects-container {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 2em;
+        
+    }
+
+    .project-item :hover{
+        cursor: pointer;
+    }
+
+    .logo {
+        height: auto;
+        width: 100px;
+    }
 }
 
-.project-item :hover{
-    cursor: pointer;
+@media only screen and (max-width: 768px) {
+    .projects-outer-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-item a {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
+    }
+
+    .project-item h2 {
+        color: #3F51B5;
+    }
+    .project-item :hover{
+        cursor: pointer;
+    }
 }
 
-.logo {
-    height: auto;
-    width: 100px;
+@media screen and (min-width: 767px) and (max-width: 991px) { 
+
+
+    .project-image-container {
+        height: 200px;
+        width: auto;
+       
+    }
+
+    .project-img {
+        width: auto;
+        height: 10px;
+    }
+
+    .project-item a {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
+    }
+
+    .project-item h2 {
+        color: #3F51B5;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 2em;
+        
+    }
+
+    .logo {
+        height: auto;
+        width: 100px;
+    }
 }

@@ -6,24 +6,40 @@ import reactSpinner from "../../assets/images/logo.svg";
 import BgImage from "../../assets/images/footer-desk.jpg";
 
 export default () => {
-    return (
-        <div>
+  return (
+    <div>
+      <div className="img-container">
+        <img
+          className="background-image"
+          src={BgImage}
+          alt="Desk with a laptop."
+        />
+      </div>
+      <div className="footer-container">
+        <h1>More about me:</h1>
+        <div className="footer-items-container">
+          <div className="footer-item">
+            <a href="https://github.com/dk03">
+              <h2>Git Hub</h2>
 
-           <div className='img-container'> <img className="background-image" src={BgImage} alt='Desk with a laptop.' /></div>
-            <div className="footer-container">
-                <h1>More about me:</h1>
-                <div className="footer-items-container">
-                    <div className="footer-item">
-                        <h2>Git Hub</h2>
-                        <a href='https://github.com/dk03'><img className='logo' src={githubLogo} alt="Github logo" /></a>
-                    </div>
-                    <div className="footer-item">
-                        <h2>CV/ Resume</h2>
-                        <img className='logo' src={cvLogo} alt="Resume logo" />{" "}
-                    </div>
-                </div>
-                <div className='footer-react-attr'> <h3>Made with React</h3><img className='logo' src={reactSpinner} alt='React logo' /></div>
-            </div>
+              <img className="logo" src={githubLogo} alt="Github logo" />
+            </a>
+          </div>
+          <div className="footer-item">
+            <a href="">
+              <h2>CV/ Resume</h2>
+
+              <img className="logo" src={cvLogo} alt="Resume logo" />
+            </a>
+          </div>
         </div>
-    );
+        <a href="https://github.com/dk03/Portfolio">
+          <div className="footer-react-attr">
+            <h3>Made with React</h3>
+            <img className="react-logo" src={reactSpinner} alt="React logo" />
+          </div>
+        </a>
+      </div>
+    </div>
+  );
 };

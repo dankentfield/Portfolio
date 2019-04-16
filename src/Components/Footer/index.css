@@ -1,62 +1,243 @@
-.background-image {
-    opacity: 0.6;
-    height: auto; 
-    width: 100%;    
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 
+
+    .background-image {
+        opacity: 0.6;
+        height: auto; 
+        width: 100%;    
+
+        
+    }
+
+    .img-container {
+        height: 580px; 
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer-container {
     
-}
+        width: 100%;
+        position: absolute;
+        top: 190vh;
+        padding-top: 15em;
+    }
 
-.img-container {
-    height: 580px; 
-    width: 100%;
-    overflow: hidden;
-}
-
-.footer-container {
-   
-    width: 100%;
-    position: absolute;
-    top: 190vh;
-    padding-top: 1em;
-}
+    .footer-container a {
+        text-decoration: inherit;
+    }
 
 
-.footer-items-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    .footer-items-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .footer-item {
+        background-color: white;
+        color: #3F51B5;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        padding: 1em;
+    }
+
+    .footer-item :hover{
+        cursor: pointer;
     
-}
+        
+    }
 
-.footer-item {
-    background-color: white;
-    color: blue;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    padding: 1em;
-}
+    .logo {
+        height: auto;
+        width: 100px;
+    }
 
-.footer-item :hover{
-    cursor: pointer;
-   
+    .footer-react-attr {
+        height: 70px;
+        margin-top: 5em;
+        background-color: #3F51B5;
+        color: white;
+        display: flex;
+        flex-basis: flex-end;   
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-end;
     
+
+    }
+    .react-logo{
+        height: auto;
+        width: 100px;
+    }
 }
 
-.logo {
-    height: auto;
-    width: 100px;
+@media only screen and (max-width: 767px) {
+
+    .background-image {
+        opacity: 0.5;
+        width: auto;    
+        height: 500px; 
+ 
+        position: relative;
+        left: -200px;
+        
+    }
+
+    .img-container {
+        
+        overflow: hidden;
+    }
+
+    .footer-container {
+        width: 100%;
+        position: absolute;
+        top: 225vh;
+        padding-top: 15em;
+    }
+
+    .footer-container a {
+        text-decoration: inherit;
+    }
+    .footer-container h2 {
+        color: #3F51B5;
+    }
+
+
+    .footer-items-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .footer-item {
+        text-decoration: inherit;
+        color: #3F51B5;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .footer-item :hover{
+        cursor: pointer;
+    
+        
+    }
+
+    .logo {
+        height: auto;
+        width: 100%;
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 50%;
+        width: 100%;
+    }
+
+    .footer-react-attr {
+        margin-top: 5em;
+        background-color: #3F51B5;
+        color: white;
+        display: flex;
+        flex-basis: flex-end;   
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-end;
+    
+
+    }
+
+    .react-logo {
+        width: auto;
+        height: 50px;
+        justify-self: center;
+    }
 }
 
-.footer-react-attr {
-    margin-top: 5em;
-    background-color: blue;
-    color: white;
-    display: flex;
-    flex-basis: flex-end;   
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-end;
-   
+@media screen and (min-width: 768px) and (max-width: 991px) { 
 
+    .background-image {
+        opacity: 0.5;
+        width: auto;    
+        height: 600px; 
+        position: relative;
+        left: -100px;
+        
+    }
+
+    .img-container {
+        overflow: hidden;
+    }
+
+    .footer-container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 1000px;
+    }
+
+    .footer-container a {
+        text-decoration: inherit;
+    }
+    .footer-container h2 {
+        color: #3F51B5;
+    }
+
+    .footer-container h1{
+        position: absolute;
+        bottom: 700px;
+        left: 250px;
+    }
+
+    .footer-items-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 450px;
+    }
+
+    .footer-item {
+        text-decoration: inherit;
+        color: #3F51B5;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .footer-item :hover{
+        cursor: pointer;
+    
+        
+    }
+
+    .logo {
+        height: auto;
+        width: 50%;
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 50%;
+     
+    }
+
+    .footer-react-attr {
+        margin-top: 5em;
+        background-color: #3F51B5;
+        color: white;
+        display: flex;
+        flex-basis: flex-end;   
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-end;
+        
+        margin-top: 650px;
+
+    }
+
+    .react-logo {
+        width: auto;
+        height: 50px;
+        justify-self: center;
+    }
 }
