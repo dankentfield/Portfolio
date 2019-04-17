@@ -8,6 +8,7 @@ import { Code, School, Work } from '@material-ui/icons/';
 import Github from '../../assets/images/github-icon.png'
 import Resume from '../../assets/images/cv-logo-white.png'
 import Linkedin from '../../assets/images/linkedin.png'
+import CV from "../../assets/DanielKentfieldCV.pdf";
 
 const styles = {
     root: {
@@ -39,7 +40,7 @@ class MenuAppBar extends React.Component {
 
                         <div className='nav-logos-container'>
                             <a href='https://github.com/dk03'> <img className='nav-logo' src={Github} /></a>
-                            <a href='/'> <img className='nav-logo' src={Resume} /></a>
+                            <a href={CV}> <img className='nav-logo' src={Resume} download={CV} /></a>
                             <a href='https://www.linkedin.com/in/daniel-kentfield-0606279b/'> <img className='nav-logo' src={Linkedin} /></a>
                         </div>
 

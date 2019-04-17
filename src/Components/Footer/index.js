@@ -4,6 +4,7 @@ import githubLogo from "../../assets/images/github-logo.png";
 import cvLogo from "../../assets/images/cv-logo.svg";
 import reactSpinner from "../../assets/images/logo.svg";
 import BgImage from "../../assets/images/footer-desk.jpg";
+import CV from "../../assets/DanielKentfieldCV.pdf";
 
 export default () => {
   return (
@@ -26,7 +27,7 @@ export default () => {
             </a>
           </div>
           <div className="footer-item">
-            <a href="">
+            <a href={CV} download={CV}>
               <h2>CV/ Resume</h2>
 
               <img className="logo" src={cvLogo} alt="Resume logo" />

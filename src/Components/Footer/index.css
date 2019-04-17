@@ -44,6 +44,10 @@
         width: 250px;
         padding: 1em;
     }
+    .footer-item a{
+        color: #3F51B5;
+        text-decoration: inherit;
+    }
 
     .footer-item :hover{
         cursor: pointer;
