@@ -7,9 +7,8 @@ Simple SPA using React to showcase some of my work.
 React app hosted on AWS S3 to showcase some of my work. 
 
 ### About Me: 
-+ Currently looking for full stack/ front-end work.
 + From London, UK.
-+ Speak English (native), Russian (B1), German (A2)
++ Speak English (native), Russian (B1),
 
 ### My Skills: 
 + ES6 Javascript
@@ -18,10 +17,10 @@ React app hosted on AWS S3 to showcase some of my work.
 + React
 + React Native (including: React Navigation, Material Design, Redux)
 + Redux
-+ AWS
++ AWS Serverless 
 + Git
 + Node
 + Express
-+ MongoDB
++ MongoDB/ DynamoDB
 
-## My CV can be found <a href="">HERE</a>
+## My CV can be found <a href="https://www.mrdan.dev">HERE</a>
