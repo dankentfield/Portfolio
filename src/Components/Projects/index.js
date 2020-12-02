@@ -54,7 +54,7 @@ const GymTrackerProject =
 
 export default () => {
   return (
-      <div className="projects-container">
+      <div className="projects-container" id="projects">
         <ForeignEarsProject />
         {/*<GymTrackerProject />*/}
     </div>

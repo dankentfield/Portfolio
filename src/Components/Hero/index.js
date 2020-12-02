@@ -19,7 +19,7 @@ const Hero = () => {
 
       <div className="button-container">
         <div className="download-cv-badge-container">
-          <a href={CV}>
+          <a href={CV} target="_blank">
             <div className="download-cv-badge-container-background">
               <h3 className="download-cv-badge-text ">{VIEW_MY_CV}</h3>
             </div>
@@ -27,9 +27,11 @@ const Hero = () => {
         </div>
 
         <div className="download-cv-badge-container">
+          <a href="#projects">
           <div className="download-cv-badge-container-background">
             <h3 className="download-cv-badge-text ">{PROJECTS}</h3>
           </div>
+          </a>
         </div>
       </div>
     </div>
