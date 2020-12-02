@@ -1,6 +1,6 @@
 import React from "react";
 import projOne from "../../assets/images/foreignears-android.png";
-import projTwo from "../../assets/images/gymtrackerScreenshot.png";
+// import projTwo from "../../assets/images/gymtrackerScreenshot.png";
 import "./index.css";
 import nodeLogo from "../../assets/images/node.png";
 import reactLogo from "../../assets/images/react.svg";
