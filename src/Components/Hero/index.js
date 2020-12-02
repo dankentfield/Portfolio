@@ -1,37 +1,32 @@
 import React from "react";
-import heroImg from "../../assets/images/heroMin.jpg";
 import "./index.css";
-const Header = "<FullStackDev />";
-// const Header = "Class Daniel extends FullStackDeveloper"
+import NavBar from "../Navbar";
 
-const curlyBraceLeft = "{";
-const curlyBraceRight = "}";
+const Header = `final public class Daniel extends FullStackProgrammer`;
+const VIEW_MY_CV = 'VIEW MY CV';
+const PROJECTS = 'VIEW MY PROJECTS';
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <img
-        className="heroImg"
-        src={heroImg}
-        alt="Laptop with code on the screen."
-      />
-      <div className="heroContainer">
-        <h1 className="hero-header">{Header}</h1>
+      <NavBar />
+
+      <div className="header-text-container">
+        <h1 className="header-text">{Header}</h1>
       </div>
 
-      <div className="subHeader">
-        <p className="const">const </p>mySkills = {curlyBraceLeft}
-        <br />
-        <div className="subHeaderInnerObj">
-          &nbsp;&nbsp; React: <p className="const">true</p>,<br />
-          &nbsp;&nbsp; ReactNative: <p className="const">true</p>,<br />
-          &nbsp;&nbsp; Redux: <p className="const">true</p>,<br />
-          &nbsp;&nbsp; HTML5: <p className="const">true</p>,<br />
-          &nbsp;&nbsp; CSS3: <p className="const">true</p>,<br />
-          &nbsp;&nbsp; ES6Javascript: <p className="const">true</p>,<br />
+      <div className="download-cv-badge-container">
+        <div className="download-cv-badge-container-background">
+          <h3 className="download-cv-badge-text ">{VIEW_MY_CV}</h3>
         </div>
-        <div className="subHeaderInnerObj">{curlyBraceRight};</div>
       </div>
+
+      <div className="download-cv-badge-container">
+        <div className="download-cv-badge-container-background">
+          <h3 className="download-cv-badge-text ">{PROJECTS}</h3>
+        </div>
+      </div>
+
     </div>
   );
 };

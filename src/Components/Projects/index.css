@@ -1,39 +1,97 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
-    .project-image-container {
-        border-radius: 50%;
-        height: 250px;
-        width: 250px;
-        padding: 1em;
-    }
-
-    .project-item a {
-        text-decoration: inherit;
-        color: inherit;
-        cursor: auto;
-    }
-
-    .project-item h2 {
-        color: #3F51B5;
-    }
 
     .projects-container {
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style-position: inside;
+    }
+
+    .project-image-container {
+        height: 250px;
+        width: auto;
+        padding: 0 1em 0 1em;
+    }
+
+    .project-item {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 2em;
-        
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 10%;
+    }
+
+    .project-item h1 {
+        text-align: left;
+    }
+
+    .project-image-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-screenshot {
+        height: 500px;
+        width: auto;
+        align-self: center;
+    }
+    .project-description-container {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        text-align: left;
+        padding-left: 100px;
+    }
+
+    .project-one-description-container {
+        grid-column: 1 / 2;
+    }
+    .project-two-description-container {
+        grid-column: 1 / 2;
     }
 
     .project-item :hover{
         cursor: pointer;
     }
-
     .logo {
         height: auto;
         width: 100px;
+    }
+    .tech-used-icon-container {
+        display: flex;
+        flex-direction: row;
+        justify-items: flex-start;
+    }
+    .tech-used-icon {
+        width: auto;
+        height: 50px;
+        /*border: grey 1px solid;*/
+        border-radius: 15px;
+        margin-right: 1em;
+        padding-bottom: 1em;
+    }
+
+    .grey-out {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    .grey-out:hover {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    .google-play-badge-container {
+        padding-top: 10px;
     }
 }
 

@@ -1,39 +1,62 @@
 import React from "react";
-import projOne from "../../assets/images/circgymtrackerScreenshot.png";
-import projTwo from "../../assets/images/circserver.png";
-import projThree from "../../assets/images/circlingqscreenshot.png";
+import projOne from "../../assets/images/foreignears-android.png";
+import projTwo from "../../assets/images/gymtrackerScreenshot.png";
 import "./index.css";
+import nodeLogo from "../../assets/images/node.png";
+import reactLogo from "../../assets/images/react.svg";
+import awsLogo from "../../assets/images/aws.png";
+import redisLogo from "../../assets/images/redis.png";
+import githubLogo from "../../assets/images/github-icon.png";
+
+const ForeignEarsProject =
+  () => (
+    <div className="project-item">
+        <div className="project-image-container">
+            <img className="project-screenshot" src={projOne} alt="Screenshot of the gym tracker react native app." />
+          <div className="google-play-badge-container">
+            <a href='https://play.google.com/store/apps/details?id=com.foreignears&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+              <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' className="badge google-play-badge-container" />
+            </a>
+          </div>
+        </div>
+
+      <div className="project-description-container" >
+        <h1>ForeignEars</h1>
+        <h2>(React Native)</h2>
+        <div className='tech-used-icon-container'>
+          <img className='tech-used-icon grey-out' src={nodeLogo} alt='Node js logo' />
+          <img className='tech-used-icon grey-out' src={reactLogo} alt='React logo' />
+          <img className='tech-used-icon grey-out' src={awsLogo} alt='AWS logo' />
+          <img className='tech-used-icon grey-out' src={redisLogo} alt='Redis logo' />
+        </div>
+        <div className='project-one-description-container'>
+          <p>Foreign ears helps you to learn a language by helping you understand podcasts in your target language.
+            <br/>We do this by generating transcripts for each podcast so you can read and listen at the same time,
+            if you find a word you don't understand - tap it to translate it.</p>
+          <p>This app was written in React Native and is supported with a complete serverless backend hosted on AWS.
+            <br/>Data is managed using Redux, Redux Saga and Redux persist which is then persisted in the backend.</p>
+          <p><strong>The backend is comprised of the following AWS microservices:</strong></p>
+          <li>AWS Lambda</li>
+          <li>DynamoDB</li>
+          <li>SNS</li>
+          <li>AWS event bridge</li>
+          <li>API Gateway</li>
+          <li>AWS Cognito</li>
+          <li>Redis</li>
+        </div>
+      </div>
+    </div>);
+
+const GymTrackerProject =
+  () => (
+    <div className="project-item">
+    </div>);
 
 export default () => {
   return (
-    <div className="projects-outer-container">
-      <h1>Projects</h1>
       <div className="projects-container">
-        <div className="project-item">
-          <a href="https://github.com/dk03/gym-tracker-react-native">
-            <h2>Gym Tracker - <br />React Native</h2>
-            <div className="project-image-container">
-              <img  src={projOne} alt="" />
-            </div>
-          </a>
-        </div>
-        <div className="project-item">
-          <a href="https://github.com/dk03/gym-tracker-node-server">
-            <h2>Gym Tracker - <br />Node Mongo server</h2>
-            <div className="project-image-container">
-              <img src={projTwo} alt="" />
-            </div>
-          </a>
-        </div>
-        <div className="project-item">
-          <a href="https://github.com/dk03/LingQ-text-to-audio-generator">
-            <h2>LingQ - <br />Text to speech</h2>
-            <div className="project-image-container">
-              <img src={projThree} alt="" />
-            </div>
-          </a>
-        </div>
-      </div>
+        <ForeignEarsProject />
+        {/*<GymTrackerProject />*/}
     </div>
   );
 };

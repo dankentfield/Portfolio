@@ -3,14 +3,30 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    .navbar-container{
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 30px;
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 5px;
+    }
+
+    .icon-container {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+        align-self: flex-end;
         display: flex;
     }
     
-    .nav-logo {
-        width: 20px;
-        height: auto;
-        margin-left: 20px;
+    .icon {
+        display: flex;
+        width: auto;
+        height: 100%;
+        align-self: flex-end;
+        margin: 0 10px 0 10px;
     }
 } 
 
