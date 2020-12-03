@@ -4,7 +4,9 @@ import NavBar from "../Navbar";
 import CV from "../../assets/DanielKentfieldCV.pdf";
 
 
-const Header = `final public class Daniel extends FullStackProgrammer`;
+const Header = `London based FullStack Programmer`;
+const subHeader = `with an interest in languages and building distributed systems`;
+const subHeader2 = ``;
 const VIEW_MY_CV = 'VIEW MY CV';
 const PROJECTS = 'VIEW MY PROJECTS';
 
@@ -14,7 +16,8 @@ const Hero = () => {
       <NavBar />
 
       <div className="header-text-container">
-        <h1 className="header-text">{Header}</h1>
+        <h1 className="header-text ">{Header}</h1>
+        <h2 className="white-text">{subHeader}</h2>
       </div>
 
       <div className="button-container">

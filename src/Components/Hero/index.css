@@ -3,6 +3,7 @@
     .hero-container {
         display: flex;
         background-image: url("../../assets/images/moscow.jpg");
+        opacity: 1;
         height: 100vh;
         width: auto;
         background-size: cover;
@@ -10,8 +11,11 @@
     }
     .header-text-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-self: center;
+        height: 100%;
+        padding: 10px 0 10px 0;
     }
     .button-container {
         display: flex;
@@ -24,12 +28,11 @@
     }
     .header-text {
         font-size: 3em;
-        color: black;
-        padding: 10vh 0 10vh 0;
-        /*border: white 1px solid;*/
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;    }
-
+        color: white;
+    }
+    .white-text {
+        color: #c7a779;
+    }
     .badge {
         display: flex;
         width: 200px;
@@ -37,19 +40,29 @@
     }
 
     .download-cv-badge-container {
-        display: flex;
-        justify-content: center;
         padding-bottom: 1rem;
     }
     .download-cv-badge-container-background {
-        background-color: black;
+        background-color: #dc0f4a;
         border-radius: 5px;
-        border: white 1px solid;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .download-cv-badge-text {
-        color: white;
+        color: black;
         padding: 0 10px 0 10px;
+    }
+    .github-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2em;
+    }
+    .github-text {
+        padding-left: 1em;
     }
 }
 

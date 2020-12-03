@@ -6,7 +6,7 @@ import nodeLogo from "../../assets/images/node.png";
 import reactLogo from "../../assets/images/react.svg";
 import awsLogo from "../../assets/images/aws.png";
 import redisLogo from "../../assets/images/redis.png";
-import githubLogo from "../../assets/images/github-icon.png";
+import githubLogo from "../../assets/images/github-logo-dark.png";
 
 const ForeignEarsProject =
   () => (
@@ -22,7 +22,6 @@ const ForeignEarsProject =
 
       <div className="project-description-container" >
         <h1>ForeignEars</h1>
-        <h2>(React Native)</h2>
         <div className='tech-used-icon-container'>
           <img className='tech-used-icon grey-out' src={nodeLogo} alt='Node js logo' />
           <img className='tech-used-icon grey-out' src={reactLogo} alt='React logo' />
@@ -35,14 +34,30 @@ const ForeignEarsProject =
             if you find a word you don't understand - tap it to translate it.</p>
           <p>This app was written in React Native and is supported with a complete serverless backend hosted on AWS.
             <br/>Data is managed using Redux, Redux Saga and Redux persist which is then persisted in the backend.</p>
-          <p><strong>The backend is comprised of the following AWS microservices:</strong></p>
-          <li>AWS Lambda</li>
-          <li>DynamoDB</li>
-          <li>SNS</li>
-          <li>AWS event bridge</li>
-          <li>API Gateway</li>
-          <li>AWS Cognito</li>
-          <li>Redis</li>
+          <div className="tech-stack-container">
+            <div className="tech-stack-item">
+              <h2>Frontend: </h2>
+              <li>React Native</li>
+              <li>Redux</li>
+              <li>Redux Saga</li>
+              <li>Redux Persist</li>
+              <li>AWS amplify (cognito)</li>
+            </div>
+            <div className="tech-stack-item">
+              <h2>Backend: </h2><p></p>
+              <li>AWS Lambda</li>
+              <li>DynamoDB</li>
+              <li>SNS</li>
+              <li>AWS event bridge</li>
+              <li>API Gateway</li>
+              <li>AWS Cognito</li>
+              <li>Redis</li>
+            </div>
+          </div>
+          <div className="github-container">
+            <img src={githubLogo}/>
+            <p className="github-text"> - Code available on request</p>
+          </div>
         </div>
       </div>
     </div>);
