@@ -3,7 +3,7 @@ import projOne from "../../assets/images/foreignears-android.png";
 // import projTwo from "../../assets/images/gymtrackerScreenshot.png";
 import "./index.css";
 import nodeLogo from "../../assets/images/node.png";
-import reactLogo from "../../assets/images/react.svg";
+import reactLogo from "../../assets/images/react-logo.js";
 import awsLogo from "../../assets/images/aws.png";
 import redisLogo from "../../assets/images/redis.png";
 import githubLogo from "../../assets/images/github-logo-dark.png";
@@ -23,10 +23,10 @@ const ForeignEarsProject =
       <div className="project-description-container" >
         <h1>ForeignEars</h1>
         <div className='tech-used-icon-container'>
-          <img className='tech-used-icon grey-out' src={nodeLogo} alt='Node js logo' />
-          <img className='tech-used-icon grey-out' src={reactLogo} alt='React logo' />
-          <img className='tech-used-icon grey-out' src={awsLogo} alt='AWS logo' />
-          <img className='tech-used-icon grey-out' src={redisLogo} alt='Redis logo' />
+          <img className='tech-used-icon' src={nodeLogo} alt='Node js logo' />
+          <img className='tech-used-icon' src={reactLogo} alt='React logo' />
+          <img className='tech-used-icon' src={awsLogo} alt='AWS logo' />
+          <img className='tech-used-icon' src={redisLogo} alt='Redis logo' />
         </div>
         <div className='project-one-description-container'>
           <p>Foreign ears helps you to learn a language by helping you understand podcasts in your target language.

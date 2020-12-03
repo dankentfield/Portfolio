@@ -20,6 +20,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 50px 10%;
+        background-color: #F5F6FA;
     }
 
     .project-item h1 {
@@ -72,22 +73,6 @@
         border-radius: 15px;
         margin-right: 1em;
         padding-bottom: 1em;
-    }
-
-    .grey-out {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-
-    .grey-out:hover {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        filter: grayscale(0%);
     }
 
     .google-play-badge-container {
