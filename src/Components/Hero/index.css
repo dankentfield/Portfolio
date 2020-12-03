@@ -2,13 +2,14 @@
 @media only screen and (min-width: 992px) {
     .hero-container {
         display: flex;
-        background-image: url("../../assets/images/moscow.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/images/desk-hero.png");
         opacity: 1;
         height: 100vh;
         width: auto;
         background-size: cover;
         flex-direction: column;
     }
+
     .header-text-container {
         display: flex;
         flex-direction: column;
@@ -27,7 +28,7 @@
         padding-bottom: 15%;
     }
     .header-text {
-        font-size: 3em;
+        font-size: 5em;
         color: white;
     }
     .white-text {
@@ -38,7 +39,9 @@
         width: 200px;
         height: auto;
     }
-
+    .no-style{
+        text-decoration: none;
+    }
     .download-cv-badge-container {
         padding-bottom: 1rem;
     }

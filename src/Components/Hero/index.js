@@ -3,9 +3,8 @@ import "./index.css";
 import NavBar from "../Navbar";
 import CV from "../../assets/DanielKentfieldCV.pdf";
 
-
-const Header = `London based FullStack Programmer`;
-const subHeader = `with an interest in languages and building distributed systems`;
+const Header = `<FullStack-Dan />`;
+const subHeader = `"From React to Russian, I love learning"`;
 const subHeader2 = ``;
 const VIEW_MY_CV = 'VIEW MY CV';
 const PROJECTS = 'VIEW MY PROJECTS';
@@ -22,7 +21,7 @@ const Hero = () => {
 
       <div className="button-container">
         <div className="download-cv-badge-container">
-          <a href={CV} target="_blank">
+          <a href={CV} target="_blank" className="no-style">
             <div className="download-cv-badge-container-background">
               <h3 className="download-cv-badge-text ">{VIEW_MY_CV}</h3>
             </div>
@@ -30,7 +29,7 @@ const Hero = () => {
         </div>
 
         <div className="download-cv-badge-container">
-          <a href="#projects">
+          <a href="#projects" className="no-style">
           <div className="download-cv-badge-container-background">
             <h3 className="download-cv-badge-text ">{PROJECTS}</h3>
           </div>

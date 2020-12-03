@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Github from '../../assets/images/github-icon.png'
 import Resume from '../../assets/images/cv-logo-white.png'
 import Linkedin from '../../assets/images/linkedin.png'
-import MediumIcon from '../../assets/images/medium-logo-white.png'
+// import MediumIcon from '../../assets/images/medium-logo-white.png'
 import CV from "../../assets/DanielKentfieldCV.pdf";
 
 const NavBar =
