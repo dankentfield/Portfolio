@@ -5,9 +5,8 @@ import CV from "../../assets/DanielKentfieldCV.pdf";
 
 const Header = `<FullStack-Dan />`;
 const subHeader = `"From React to Russian, I love learning"`;
-const subHeader2 = ``;
 const VIEW_MY_CV = 'VIEW MY CV';
-const PROJECTS = 'VIEW MY PROJECTS';
+const PROJECTS = 'RECENT PROJECTS';
 
 const Hero = () => {
   return (
