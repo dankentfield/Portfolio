@@ -22,7 +22,9 @@
         padding: 50px 10%;
         background-color: #F5F6FA;
     }
-
+    .white-background {
+        background-color: white;
+    }
     .project-item h1 {
         text-align: left;
     }
