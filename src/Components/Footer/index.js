@@ -1,46 +1,27 @@
 import React from "react";
 import "./index.css";
-import githubLogo from "../../assets/images/github-logo.png";
-import cvLogo from "../../assets/images/cv-logo.svg";
 import reactSpinner from "../../assets/images/logo.svg";
-import BgImage from "../../assets/images/footer-desk.jpg";
-import CV from "../../assets/DanielKentfieldCV.pdf";
+import Github from "../../assets/images/github-logo-dark.png";
+import Linkedin from "../../assets/images/linkedin-logo.png";
+import CV from "../icons/cv";
+
 
 export default () => {
   return (
-    <div>
-      <div className="img-container">
-        <img
-          className="background-image"
-          src={BgImage}
-          alt="Desk with a laptop."
-        />
-      </div>
-      <div className="footer-container">
-        <h1>More about me:</h1>
-        <div className="footer-items-container">
-          <div className="footer-item">
-            <a href="https://github.com/dk03">
-              <h2>Git Hub</h2>
-
-              <img className="logo" src={githubLogo} alt="Github logo" />
-            </a>
-          </div>
-          <div className="footer-item">
-            <a href={CV} download={CV}>
-              <h2>CV/ Resume</h2>
-
-              <img className="logo" src={cvLogo} alt="Resume logo" />
-            </a>
-          </div>
+      <div className="footer-container colored-background">
+        <div className="footer-react-container">
+          <strong>Made with react</strong>
+          <img src={reactSpinner} className="footer-icon-react" />
         </div>
-        <a href="https://github.com/dk03/Portfolio">
-          <div className="footer-react-attr">
-            <h3>Made with React</h3>
-            <img className="react-logo" src={reactSpinner} alt="React logo" />
-          </div>
-        </a>
+        <div className="footer-icon-container">
+          <a href="https://github.com/dk03" target="_blank" >
+            <img src={Github} className="footer-icon-react" />
+          </a>
+          <CV darkMode />
+          <a href="https://www.linkedin.com/in/daniel-kentfield" target="_blank" >
+            <img src={Linkedin} className="footer-icon-react" />
+          </a>
+        </div>
       </div>
-    </div>
   );
 };

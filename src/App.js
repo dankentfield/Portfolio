@@ -14,7 +14,7 @@ class App extends Component {
        <Hero />
        <Skills />
        <Projects />
-       {/*<Footer />*/}
+       <Footer />
       </div>
     );
   }

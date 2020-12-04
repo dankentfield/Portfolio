@@ -25,6 +25,9 @@
     .white-background {
         background-color: white;
     }
+    .colored-background {
+        background-color: #F5F6FA;
+    }
     .project-item h1 {
         text-align: left;
     }
