@@ -13,14 +13,18 @@
         width: auto;
         padding: 0 1em 0 1em;
     }
-
+    .project-item-container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10%;
+        background-color: #F5F6FA;
+    }
     .project-item {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 10%;
-        background-color: #F5F6FA;
+
     }
     .white-background {
         background-color: white;
@@ -49,10 +53,10 @@
         flex-direction: column;
         align-self: flex-start;
         text-align: left;
-        padding-left: 100px;
     }
 
     .project-one-description-container {
+        text-align: justify;
     }
     .project-two-description-container {
     }
@@ -67,12 +71,11 @@
     .tech-used-icon-container {
         display: flex;
         flex-direction: row;
-        justify-items: flex-start;
+        justify-content: flex-start;
     }
     .tech-used-icon {
         width: auto;
         height: 50px;
-        /*border: grey 1px solid;*/
         border-radius: 15px;
         margin-right: 1em;
         padding-bottom: 1em;
@@ -85,9 +88,16 @@
     .tech-stack-container {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
     }
     .tech-stack-item {
         padding-right: 2em;
+    }
+    .project-header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2em;
     }
 }
 
@@ -106,6 +116,10 @@
         padding: 0 1em 0 1em;
     }
 
+    .project-item-container {
+        background-color: #F5F6FA;
+    }
+
     .project-item {
         display: flex;
         flex-direction: column;
@@ -113,9 +127,7 @@
         align-items: center;
         background-color: #F5F6FA;
     }
-    .white-background {
-        background-color: white;
-    }
+
     .colored-background {
         background-color: #F5F6FA;
     }
@@ -191,7 +203,17 @@
     .project-reverse {
         flex-direction: column-reverse;
     }
-
+    .project-header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+    }
+    .white-background {
+        background-color: white;
+    }
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px) {
@@ -209,6 +231,10 @@
         padding: 0 1em 0 1em;
     }
 
+    .project-item-container {
+        background-color: #F5F6FA;
+    }
+
     .project-item {
         display: flex;
         flex-direction: column;
@@ -216,9 +242,7 @@
         align-items: center;
         background-color: #F5F6FA;
     }
-    .white-background {
-        background-color: white;
-    }
+
     .colored-background {
         background-color: #F5F6FA;
     }
@@ -290,5 +314,19 @@
     .github-container {
         justify-content: center;
         flex-direction: column;
+    }
+    .project-reverse {
+        flex-direction: column-reverse;
+    }
+    .project-header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+    }
+    .white-background {
+        background-color: white;
     }
 }

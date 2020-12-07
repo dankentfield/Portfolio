@@ -1,5 +1,4 @@
 import gymTrackerAndroid from "../../assets/images/gym-tracker-android.png";
-// import gymTrackerAndroid from "../../assets/images/gymtracker.gif";
 import nodeLogo from "../../assets/images/node.png";
 import nginxLogo from "../../assets/images/nginx-logo.svg";
 import reactLogo from "../../assets/images/react-logo";
@@ -10,10 +9,10 @@ import React from "react";
 
 const githubLinkGymTracker = "https://github.com/dk03/gym-tracker-react-native";
 
-const GymTrackerProject =
-  () => (
-    <div className="project-item white-background project-reverse">
-      <div className="project-description-container" >
+const Header =
+  () =>
+    (
+      <div className="project-header-container white-background">
         <h1>GymTracker</h1>
         <div className='tech-used-icon-container'>
           <img className='tech-used-icon' src={nodeLogo} alt='Node js logo' />
@@ -22,37 +21,46 @@ const GymTrackerProject =
           <img className='tech-used-icon' src={reactLogo} alt='React logo' />
           <img className='tech-used-icon' src={awsLogo} alt='AWS logo' />
         </div>
-        <div className='project-one-description-container'>
-          <p>MVP Android app written in React Native - for personal use to record workouts in the gym.
-            Hooked into a Node-Express server hosted on AWS EC2 running NGINX.</p>
-          <p>The app persists its data in Mongo Atlas.</p>
-          <div className="tech-stack-container">
-            <div className="tech-stack-item">
-              <h2>Frontend: </h2>
-              <li>React Native</li>
-              <li>Redux</li>
-            </div>
-            <div className="tech-stack-item">
-              <h2>Backend: </h2><p></p>
-              <li>AWS EC2</li>
-              <li>NGINX</li>
-              <li>DynamoDB</li>
-              <li>API Gateway</li>
-              <li>MongoDB</li>
-            </div>
-          </div>
-          <div className="github-container">
-            <a href={githubLinkGymTracker} target="_blank" className="github-container no-style">
-              <img src={githubLogo}/>
-              <p className="github-text"> - View code here</p>
-            </a>
-          </div>
-
-        </div>
       </div>
+    );
 
-      <div className="project-image-container">
-        <img className="project-screenshot" src={gymTrackerAndroid} alt="Screenshot of the gym tracker react native app." />
+
+const GymTrackerProject =
+  () => (
+    <div className="project-item-container white-background">
+      <Header />
+      <div className="project-item project-reverse">
+        <div className="project-description-container" >
+          <div className='project-one-description-container'>
+            <p>MVP Android app written in React Native - for personal use to record workouts in the gym.
+              Hooked into a Node-Express server hosted on AWS EC2 running NGINX.</p>
+            <p>The app persists its data in Mongo Atlas.</p>
+            <div className="tech-stack-container">
+              <div className="tech-stack-item">
+                <h2>Frontend: </h2>
+                <li>React Native</li>
+                <li>Redux</li>
+              </div>
+              <div className="tech-stack-item">
+                <h2>Backend: </h2><p></p>
+                <li>AWS EC2</li>
+                <li>NGINX</li>
+                <li>DynamoDB</li>
+                <li>API Gateway</li>
+                <li>MongoDB</li>
+              </div>
+            </div>
+            <div className="github-container">
+              <a href={githubLinkGymTracker} target="_blank" className="github-container no-style">
+                <img src={githubLogo}/>
+                <p className="github-text">View code here</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="project-image-container">
+           <img className="project-screenshot" src={gymTrackerAndroid} alt="Screenshot of the gym tracker react native app." />
+        </div>
       </div>
     </div>);
 
