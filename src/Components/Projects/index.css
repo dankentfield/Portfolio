@@ -88,7 +88,7 @@
     .tech-stack-container {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
     .tech-stack-item {
         padding-right: 2em;

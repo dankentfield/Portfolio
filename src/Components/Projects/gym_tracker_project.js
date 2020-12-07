@@ -50,16 +50,16 @@ const GymTrackerProject =
                 <li>MongoDB</li>
               </div>
             </div>
-            <div className="github-container">
-              <a href={githubLinkGymTracker} target="_blank" className="github-container no-style">
-                <img src={githubLogo}/>
-                <p className="github-text">View code here</p>
-              </a>
-            </div>
           </div>
         </div>
         <div className="project-image-container">
            <img className="project-screenshot" src={gymTrackerAndroid} alt="Screenshot of the gym tracker react native app." />
+          <div className="github-container">
+            <a href={githubLinkGymTracker} target="_blank" className="github-container no-style">
+              <img src={githubLogo}/>
+              <p className="github-text">View code here</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>);

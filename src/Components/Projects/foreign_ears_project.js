@@ -32,6 +32,10 @@ const ForeignEarsProject =
               <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' className="badge google-play-badge-container" />
             </a>
           </div>
+          <div className="github-container">
+            <img src={githubLogo}/>
+            <p className="github-text">Code available on request</p>
+          </div>
         </div>
         <div className="project-description-container" >
           <div className='project-one-description-container'>
@@ -59,10 +63,6 @@ const ForeignEarsProject =
                 <li>AWS Cognito</li>
                 <li>Redis</li>
               </div>
-            </div>
-            <div className="github-container">
-              <img src={githubLogo}/>
-              <p className="github-text">Code available on request</p>
             </div>
         </div>
         </div>
