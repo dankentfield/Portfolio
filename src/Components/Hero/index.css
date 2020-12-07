@@ -70,9 +70,141 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .hero-container {
+        display: flex;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/images/desk-hero.png");
+        opacity: 1;
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        flex-direction: column;
+    }
 
+    .header-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        height: 100%;
+        padding: 10px 0 10px 0;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 15%;
+    }
+    .header-text {
+        font-size: 3em;
+        color: white;
+    }
+    .white-text {
+        color: #c7a779;
+    }
+    .badge {
+        display: flex;
+        width: 200px;
+        height: auto;
+    }
+    .no-style{
+        text-decoration: none;
+    }
+    .download-cv-badge-container {
+        padding-bottom: 1rem;
+    }
+    .download-cv-badge-container-background {
+        background-color: #dc0f4a;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .download-cv-badge-text {
+        color: white;
+        padding: 0 10px 0 10px;
+    }
+    .github-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2em;
+    }
+    .github-text {
+        padding-left: 1em;
+    }
 }
 
-@media screen and (min-width: 767px) and (max-width: 991px) { 
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .hero-container {
+        display: flex;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/images/desk-hero.png");
+        opacity: 1;
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        flex-direction: column;
+    }
 
+    .header-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        height: 100%;
+        padding: 10px 0 10px 0;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 15%;
+    }
+    .header-text {
+        font-size: 5em;
+        color: white;
+    }
+    .white-text {
+        color: #c7a779;
+    }
+    .badge {
+        display: flex;
+        width: 200px;
+        height: auto;
+    }
+    .no-style{
+        text-decoration: none;
+    }
+    .download-cv-badge-container {
+        padding-bottom: 1rem;
+    }
+    .download-cv-badge-container-background {
+        background-color: #dc0f4a;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .download-cv-badge-text {
+        color: white;
+        padding: 0 10px 0 10px;
+    }
+    .github-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2em;
+    }
+    .github-text {
+        padding-left: 1em;
+    }
 }

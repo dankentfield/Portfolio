@@ -1,7 +1,56 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+
     .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills-items-container {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        background-color: white;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .skill-item {
+        font-weight: bold;
+        font-size: 1em;
+        color: black;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        height: auto;
+        width: 100px;
+        align-self: center;
+        justify-self: center;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .skills-container {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills-items-container {
         display: flex;
         align-self: center;
         width: 100%;
@@ -29,12 +78,4 @@
         justify-self: center;
         padding-top: 1rem;
     }
-}
-
-@media only screen and (max-width: 768px) {
-
-    .skills-outer-container {
-        display: none;
-    }
-
 }

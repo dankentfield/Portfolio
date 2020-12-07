@@ -53,10 +53,8 @@
     }
 
     .project-one-description-container {
-        grid-column: 1 / 2;
     }
     .project-two-description-container {
-        grid-column: 1 / 2;
     }
 
     .project-item :hover{
@@ -94,59 +92,203 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .projects-outer-container {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .project-item a {
-        text-decoration: inherit;
-        color: inherit;
-        cursor: auto;
-    }
-
-    .project-item h2 {
-        color: #3F51B5;
-    }
-    .project-item :hover{
-        cursor: pointer;
-    }
-}
-
-@media screen and (min-width: 767px) and (max-width: 991px) { 
-
-
-    .project-image-container {
-        height: 200px;
-        width: auto;
-       
-    }
-
-    .project-img {
-        width: auto;
-        height: 10px;
-    }
-
-    .project-item a {
-        text-decoration: inherit;
-        color: inherit;
-        cursor: auto;
-    }
-
-    .project-item h2 {
-        color: #3F51B5;
-    }
 
     .projects-container {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 2em;
-        
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style-position: inside;
     }
 
+    .project-image-container {
+        height: 250px;
+        width: auto;
+        padding: 0 1em 0 1em;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F5F6FA;
+    }
+    .white-background {
+        background-color: white;
+    }
+    .colored-background {
+        background-color: #F5F6FA;
+    }
+    .project-item h1 {
+        text-align: left;
+    }
+
+    .project-image-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+    }
+    .project-screenshot {
+        height: 500px;
+        width: auto;
+        align-self: center;
+    }
+    .project-description-container {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        font-size: 1.5rem;
+        text-align: center;
+        list-style: none;
+    }
+    .project-description-container h1 {
+        text-align: center;
+    }
+
+    .project-one-description-container {
+        padding: 0 1rem;
+    }
+    .project-two-description-container {
+        padding: 0 1rem;
+    }
+
+    .project-item :hover{
+        cursor: pointer;
+    }
     .logo {
         height: auto;
         width: 100px;
+    }
+    .tech-used-icon-container {
+        display: block;
+    }
+    .tech-used-icon {
+        width: auto;
+        height: 50px;
+        border-radius: 15px;
+        margin-right: 1em;
+        padding-bottom: 1em;
+    }
+
+    .google-play-badge-container {
+        padding-top: 10px;
+    }
+
+    .tech-stack-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .github-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .project-reverse {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style-position: inside;
+    }
+
+    .project-image-container {
+        height: 250px;
+        width: auto;
+        padding: 0 1em 0 1em;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F5F6FA;
+    }
+    .white-background {
+        background-color: white;
+    }
+    .colored-background {
+        background-color: #F5F6FA;
+    }
+    .project-item h1 {
+        text-align: left;
+    }
+
+    .project-image-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+    }
+    .project-screenshot {
+        height: 500px;
+        width: auto;
+        align-self: center;
+    }
+    .project-description-container {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        font-size: 1.5rem;
+        text-align: center;
+        list-style: none;
+    }
+    .project-description-container h1 {
+        text-align: center;
+    }
+
+    .project-one-description-container {
+        padding: 0 1rem;
+    }
+    .project-two-description-container {
+        padding: 0 1rem;
+    }
+
+    .project-item :hover{
+        cursor: pointer;
+    }
+    .logo {
+        height: auto;
+        width: 100px;
+    }
+    .tech-used-icon-container {
+        display: block;
+    }
+    .tech-used-icon {
+        width: auto;
+        height: 50px;
+        border-radius: 15px;
+        margin-right: 1em;
+        padding-bottom: 1em;
+    }
+
+    .google-play-badge-container {
+        padding-top: 10px;
+    }
+
+    .tech-stack-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .github-container {
+        justify-content: center;
+        flex-direction: column;
     }
 }

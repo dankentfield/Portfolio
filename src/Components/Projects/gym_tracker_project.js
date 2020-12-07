@@ -12,7 +12,7 @@ const githubLinkGymTracker = "https://github.com/dk03/gym-tracker-react-native";
 
 const GymTrackerProject =
   () => (
-    <div className="project-item white-background">
+    <div className="project-item white-background project-reverse">
       <div className="project-description-container" >
         <h1>GymTracker</h1>
         <div className='tech-used-icon-container'>

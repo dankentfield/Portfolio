@@ -9,13 +9,13 @@ import nodeLogo from '../../assets/images/node.png'
 
 export default () => {
   return (
-    <div className=''>
+    <div className='skills-container'>
 
       <h3>My current technology stack:</h3>
-      <div className='skills-container'>
-      <div className='skill-item '>
-            <img className='logo' src={javaLogo} alt='Java logo' />
-          </div>
+      <div className='skills-items-container'>
+          <div className='skill-item '>
+                <img className='logo' src={javaLogo} alt='Java logo' />
+              </div>
 
           <div className='skill-item '>
             <img className='logo' src={nodeLogo} alt='Node js logo' />
@@ -24,7 +24,6 @@ export default () => {
           <div className='skill-item '>
             <img className='logo' src={reactLogo} alt='React logo' />
           </div>
-
 
           <div className='skill-item '>
             <img className='logo' src={reduxLogo} alt='Redux logo' />
@@ -37,7 +36,6 @@ export default () => {
           <div className='skill-item '>
             <img className='logo' src={awsLogo} alt='Amazon web services logo' />
           </div>
-
     </div>
     </div>
   )

@@ -42,7 +42,7 @@ const ForeignEarsProject =
               <li>AWS amplify (cognito)</li>
             </div>
             <div className="tech-stack-item">
-              <h2>Backend: </h2><p></p>
+              <h2>Backend: </h2>
               <li>AWS Lambda</li>
               <li>DynamoDB</li>
               <li>SNS</li>
@@ -54,7 +54,7 @@ const ForeignEarsProject =
           </div>
           <div className="github-container">
             <img src={githubLogo}/>
-            <p className="github-text"> - Code available on request</p>
+            <p className="github-text">Code available on request</p>
           </div>
         </div>
       </div>
