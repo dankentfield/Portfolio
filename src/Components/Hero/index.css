@@ -58,13 +58,6 @@
         color: white;
         padding: 0 10px 0 10px;
     }
-    .github-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 2em;
-    }
     .github-text {
         padding-left: 1em;
     }
@@ -129,13 +122,6 @@
         color: white;
         padding: 0 10px 0 10px;
     }
-    .github-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 2em;
-    }
     .github-text {
         padding-left: 1em;
     }
@@ -198,13 +184,6 @@
     .download-cv-badge-text {
         color: white;
         padding: 0 10px 0 10px;
-    }
-    .github-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 2em;
     }
     .github-text {
         padding-left: 1em;
