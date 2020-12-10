@@ -8,7 +8,7 @@ import githubLogo from "../../assets/images/github-logo-dark.png";
 import React from "react";
 
 const githubLinkGymTrackerApp = "https://github.com/dk03/gym-tracker-react-native";
-const githubLinkGymTrackerServer = "https://github.com/dk03/gym-tracker-react-native";
+const githubLinkGymTrackerServer = "https://github.com/dk03/gym-tracker-node-server";
 
 const Header =
   () =>
@@ -31,7 +31,7 @@ const GymTrackerProject =
     <div className="project-item-container white-background">
       <Header />
       <div className="project-item project-reverse">
-        <div className="project-description-container project-two-description-container" >
+        <div className="project-description-container project-two-description-container " >
           <div className='project-one-description-container'>
             <p>MVP React Native app.</p>
             <p>Hooked into a Node-Express server hosted on AWS EC2 running NGINX.</p>
