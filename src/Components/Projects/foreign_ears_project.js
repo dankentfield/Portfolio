@@ -6,6 +6,8 @@ import redisLogo from "../../assets/images/redis.png";
 import githubLogo from "../../assets/images/github-logo-dark.png";
 import React from "react";
 
+const appUrl = 'https://play.google.com/store/apps/details?id=com.foreignears&hl=en&gl=US';
+
 const Header =
   () =>
   (
@@ -26,11 +28,11 @@ const ForeignEarsProject =
       <Header />
       <div className="project-item">
         <div className="project-image-container">
-          <a href='https://play.google.com/store/apps/details?id=com.foreignears&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
+          <a href={appUrl} target="_blank">
             <img className="project-screenshot" src={projOne} alt="Screenshot of the gym tracker react native app." />
           </a>
           <div className="google-play-badge-container">
-            <a href='https://play.google.com/store/apps/details?id=com.foreignears&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
+            <a href={appUrl} target="_blank">
               <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' className="badge google-play-badge-container" />
             </a>
           </div>
